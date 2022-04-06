@@ -1,8 +1,8 @@
 <?php 
 $serverName = "localhost";
-$userName = "id18067408_root";
-$password = ")_X!I6IZ1rf4CtDm";
-$databaseName = "id18067408_practicedb";
+$userName = "root";
+$password = "password";
+$databaseName = "mydb";
 
 $conn= new mysqli($serverName,$userName,$password,$databaseName);
 if($conn->connect_error){
@@ -10,7 +10,7 @@ if($conn->connect_error){
     die("Connection errro ".$conn->connect_error);
 }
 
-$return["message"]="";
+
 
  $firstValue = $_POST['firstValue'];
  $secondValue = $_POST['secondValue'];
