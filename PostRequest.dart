@@ -66,12 +66,7 @@ class _BodyOfScaffoldState extends State<BodyOfScaffold> {
     if (response.statusCode == 200) {
       debugPrint("Success");
       debugPrint(response.body);
-      //data is String
       var data = jsonDecode(response.body);
-      debugPrint(data.runtimeType.toString());
-
-//dataAgain is map
-
       //print the data of message and hi respectively
       debugPrint(data['message'].toString());
       debugPrint(data['hi'].toString());
